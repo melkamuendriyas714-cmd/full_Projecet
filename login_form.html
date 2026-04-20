@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+   <style type="text/css">
+   	*{
+   		margin:0;
+   		padding: 0;
+   	}
+   	body{
+   		display: flex;
+   		justify-content: center;
+   		align-items: center;
+   		background-image: url('https://t4.ftcdn.net/jpg/06/91/05/19/360_F_691051962_GFhQPOAXABmf7l706q89b2PFh6FnB1kI.webp');
+   		background-size:cover;
+   		background-position: center;
+   		height: 100vh;
+   		width: 100vw;
+   	}
+   	.login-container{
+    background: lightgray;
+    padding: 55px;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+   }
+   .login_form h2{
+   	color:#333;
+   	text-align:center;
+   	margin-bottom: 8px;
+   }
+   .login_form p{
+   	 margin-bottom: 24px;
+    color: #666;
+    text-align: center;
+    font-size: 0.9rem;
+   }
+   .div-gorup{
+   	margin-bottom: 20px;
+   }
+   .div-gorup label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 0.9rem;
+   }
+   .div-gorup input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+   }
+   .div-gorup input:focus {
+    border-color: #007bff; 
+    }
+    .sign-in {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+   }
+   .sign-in:hover{
+   	background-color: darkblue;
+   }
+   .footer-links {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.85rem;
+   }
+   .footer-links a{
+   	text-decoration: none;
+   }
+   .footer-links a:hover {
+    text-decoration: underline;
+   }
+   .footer-links span {
+    display: block;
+    margin-top: 10px;
+    color: #777;
+}
+
+   </style>
+ </head>
+<body>
+	<div class="login-container">
+		<form class="login_form">
+			 <h2>Welcome Back</h2>
+            <p>Please enter your details</p>
+
+            <div class="div-gorup">
+            	<label for="username">username</label>
+                <input type="text" id="username" name="username" required> 	
+            </div>
+            <div class="div-gorup">
+            	<label for="password">password</label>
+                <input type="password" id="password" name="password" required> 
+            </div>
+            <button type="submit" class="sign-in">Sign In</button>
+            <div class="footer-links">
+                <a href="#">Forgot password?</a>
+                <span>Don't have an account? <a href="#">Sign up</a></span>
+            </div>
+            
+			
+		</form>
+	</div>
+</body>
+</html>
