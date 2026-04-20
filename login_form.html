@@ -41,13 +41,25 @@
    }
    .div-gorup{
    	margin-bottom: 20px;
+	position:relative;
    }
    .div-gorup label {
+	position:absolute;
+	right:10px;
+	left:10px;
     display: block;
     margin-bottom: 8px;
     color: #555;
     font-size: 0.9rem;
+	transition:0.3s ease all;
    }
+   .input-container input:focus ~ label,
+    .input-container input:valid ~ label {
+         top: -20px;       
+         font-size: 20px;  
+         color: white;   
+         left: 5px;
+		}
    .div-gorup input {
     width: 100%;
     padding: 12px;
@@ -100,12 +112,12 @@
             <p>Please enter your details</p>
 
             <div class="div-gorup">
-            	<label for="username">username</label>
                 <input type="text" id="username" name="username" required> 	
+				<label for="username">username</label>
             </div>
-            <div class="div-gorup">
-            	<label for="password">password</label>
+            <div class="div-gorup"> 	
                 <input type="password" id="password" name="password" required> 
+				<label for="password">password</label>
             </div>
             <button type="submit" class="sign-in">Sign In</button>
             <div class="footer-links">
